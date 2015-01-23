@@ -32,5 +32,5 @@ end
 
 puts foods_array
 File.open('foods_hash.txt', 'w') do |f|
-  foods_array.each { |element| f.puts(element) }
+  foods_array.each { |element| f.puts("Foods.create(#{element})") }
 end
