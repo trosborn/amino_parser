@@ -16,16 +16,16 @@ until i == 48
   food = {}
   food[:name] = names[i]
   food[:serving_size] = quantity[i].sub(/\n\t\t\t\t\t\t\t/, '')
-  food[:protein] = acids[i*10]
-  food[:histidine] = acids[i*10+1]
-  food[:isoleucine] = acids[i*10+2]
-  food[:leucine] = acids[i*10+3]
-  food[:lysine] = acids[i*10+4]
-  food[:methionine_cysteine] = acids[i*10+5]
-  food[:phenylalanine_tyrosine] = acids[i*10+6]
-  food[:threonine] = acids[i*10+7]
-  food[:tryptophan] = acids[i*10+8]
-  food[:valine] = acids[i*10+9]
+  food[:protein] = acids[i*10].to_i
+  food[:histidine] = acids[i*10+1].to_i
+  food[:isoleucine] = acids[i*10+2].to_i
+  food[:leucine] = acids[i*10+3].to_i
+  food[:lysine] = acids[i*10+4].to_i
+  food[:methionine_cysteine] = acids[i*10+5].to_i
+  food[:phenylalanine_tyrosine] = acids[i*10+6].to_i
+  food[:threonine] = acids[i*10+7].to_i
+  food[:tryptophan] = acids[i*10+8].to_i
+  food[:valine] = acids[i*10+9].to_i
   foods_array << food
   i += 1
 end
